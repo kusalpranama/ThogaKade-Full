@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="721.0" style="-fx-background-color: #aaa69d;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainPageController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="216.0" layoutY="14.0" prefHeight="100.0" prefWidth="477.0" style="-fx-background-color: #ffb142; -fx-background-radius: 35px;" text="Thogakade" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="425.0" fitWidth="343.0" layoutX="3.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/pexels-fotios-photos-1995010.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="185.0" layoutX="14.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/shopping-cart-logo-design-template-with-smile-symbol-graphic-design-illustration-icon-modern-creative-vector.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="385.0" layoutY="169.0" onAction="#btnCustomerOnAction" prefHeight="76.0" prefWidth="292.0" style="-fx-background-color: #EE5A24; -fx-background-radius: 45px;" text="Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="384.0" layoutY="258.0" onAction="#btnItemOnAction" prefHeight="76.0" prefWidth="292.0" style="-fx-background-color: #ffda79; -fx-background-radius: 45px;" text="Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="388.0" layoutY="349.0" onAction="#btnOrderDetailOnAction" prefHeight="76.0" prefWidth="292.0" style="-fx-background-color: #ffd32a; -fx-background-radius: 45px;" text="Order Detail" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="387.0" layoutY="442.0" onAction="#btnOrdersOnAction" prefHeight="76.0" prefWidth="292.0" style="-fx-background-color: #eb2f06; -fx-background-radius: 45px;" text="Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

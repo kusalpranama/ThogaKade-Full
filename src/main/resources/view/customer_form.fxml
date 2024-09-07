@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="602.0" prefWidth="947.0" style="-fx-background-color: #12CBC4;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer.CustomerFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="217.0" layoutY="17.0" prefHeight="74.0" prefWidth="582.0" style="-fx-background-radius: 45px; -fx-background-color: #EAB543;" text="Customer Form" textFill="#f2ecec">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomers" layoutX="6.0" layoutY="286.0" prefHeight="286.0" prefWidth="934.0">
+        <columns>
+          <TableColumn fx:id="colCustID" prefWidth="75.0" text="Cust ID" />
+          <TableColumn fx:id="colTitle" prefWidth="68.0" text="Cust Title" />
+            <TableColumn fx:id="colCustName" prefWidth="89.0" text="Cust Name" />
+            <TableColumn fx:id="colDob" prefWidth="117.0" text="DOB" />
+            <TableColumn fx:id="colSalary" prefWidth="118.0" text="Salary" />
+            <TableColumn fx:id="colCustAddress" prefWidth="131.0" text="Cust Address" />
+            <TableColumn fx:id="colCity" prefWidth="113.0" text="City" />
+            <TableColumn fx:id="colProvince" prefWidth="122.0" text="Province" />
+            <TableColumn fx:id="colPostalCode" minWidth="0.0" prefWidth="100.0" text="Postal Code" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtCustID" focusColor="BLACK" layoutX="47.0" layoutY="125.0" promptText="Cust ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustName" layoutX="46.0" layoutY="228.0" promptText="Cust Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCity" layoutX="448.0" layoutY="133.0" promptText="City">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSalary" layoutX="240.0" layoutY="185.0" promptText="Salary">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustAddress" layoutX="241.0" layoutY="228.0" promptText="Cust Address">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <ComboBox fx:id="cmbTitle" layoutX="42.0" layoutY="185.0" prefWidth="150.0" promptText="Title" />
+      <JFXTextField fx:id="txtProvince" layoutX="448.0" layoutY="184.0" promptText="Province">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPostalCode" layoutX="448.0" layoutY="238.0" promptText="Postal Code">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXTextField>
+      <DatePicker fx:id="dateDob" layoutX="219.0" layoutY="129.0" />
+      <JFXButton layoutX="639.0" layoutY="119.0" onAction="#btnAddCustomerOnAction" prefHeight="45.0" prefWidth="174.0" style="-fx-background-color: #5f27cd; -fx-background-radius: 55px;" text="ADD Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="640.0" layoutY="178.0" onAction="#btnUpdateCustomerOnAction" prefHeight="45.0" prefWidth="174.0" style="-fx-background-color: #c56cf0; -fx-background-radius: 55px;" text="UPDATE Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="643.0" layoutY="231.0" onAction="#btnDeleteCustomerOnAction" prefHeight="45.0" prefWidth="174.0" style="-fx-background-color: #ff3838; -fx-background-radius: 55px;" text="Delete Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="820.0" layoutY="162.0" onAction="#btnSearchCustomerOnAction" prefHeight="62.0" prefWidth="120.0" style="-fx-background-color: #2C3A47; -fx-background-radius: 55px;" text="Search Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="87.0" fitWidth="174.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/shopping-cart-logo-design-template-with-smile-symbol-graphic-design-illustration-icon-modern-creative-vector.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
